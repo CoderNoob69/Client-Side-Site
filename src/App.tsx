@@ -14,6 +14,7 @@ import UpdatePost from './pages/UpdatePost';
 import Post from './pages/Post';
 import PostPage from './pages/PostPage';
 import Team from './pages/Team';
+import MemberForm from './components/About/MemberForm';
 
 // import OnlyAdmin from './components/OnlyAdmin';
 import PrivateRoute from './components/PrivateRoute';
@@ -42,6 +43,8 @@ function App() {
               <Route path="/search/:searh-query" element={<Search />}></Route>
               <Route element={<PrivateRoute />}>
                 <Route path="/dashboard" element={<Dashboard />}></Route>
+                <Route path="/add-member" element={<MemberForm />}></Route>
+                <Route path="/edit-member/:id" element={<MemberForm />}></Route>
               </Route>
               <Route path="/create-post" element={<CreatePost />}></Route>
               <Route path="/update-post/:postId" element={<UpdatePost />}></Route>

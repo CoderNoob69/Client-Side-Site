@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import NumberAnimation from "../components/Animation/Animation";
 import { FiUsers, FiAward, FiActivity } from 'react-icons/fi';
+import TeamSection from '../components/About/TeamSection';
 
 function About() {
   const stats = [
@@ -165,8 +166,9 @@ function About() {
         className="py-20 px-4"
       >
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-yellow-500 mb-12">Our Team</h2>
+          <h2 className="text-6xl font-bold text-yellow-500 mb-12">Our Team</h2>
           {/* Add team members grid here */}
+          <TeamSection />
         </div>
       </motion.section>
     </motion.div>
